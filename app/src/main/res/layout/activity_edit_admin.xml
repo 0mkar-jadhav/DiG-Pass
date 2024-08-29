@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_admin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@color/light">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Admin"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/photo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/uplphoto"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="#00FFFFFF"
+                        android:tint="@color/blue"
+                        android:clickable="true"
+                        android:contentDescription="TODO"
+                        android:focusable="true"
+                        app:layout_constraintBottom_toBottomOf="@+id/photo"
+                        app:layout_constraintEnd_toEndOf="@+id/photo"
+                        app:srcCompat="@drawable/baseline_add_a_photo_24" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/edit_email"
+                    style="@style/edittext"
+                    android:hint="Email"
+                    android:alpha="0.5"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/baseline_mail_24"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:background="@drawable/custom_edittext"
+                    style="@style/edittext"
+                    android:hint="Name"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    style="@style/edittext"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    />
+
+                <TextView
+                    android:id="@+id/post"
+                    style="@style/spinner"
+                    android:alpha="0.5"
+                    android:layout_width="match_parent"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/dept"
+                        style="@style/spinner"
+                        android:layout_width="110dp"
+                        android:alpha="0.5"
+                        android:layout_marginEnd="30dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/div"
+                        android:visibility="gone"
+                        style="@style/spinner"
+                        android:alpha="0.5"
+                        android:layout_width="110dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edit_no"
+                    style="@style/edittext"
+                    android:drawableLeft="@drawable/baseline_phone_enabled_24"
+                    android:hint="Mobile no"
+                    android:inputType="number" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/button"
+                    android:text="Update"
+                    android:id="@+id/update_button"
+                    android:layout_marginTop="30dp"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

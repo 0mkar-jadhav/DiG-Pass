@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "777846403865",
+    "firebase_url": "https://dig-pass-3033e-default-rtdb.firebaseio.com",
+    "project_id": "dig-pass-3033e",
+    "storage_bucket": "dig-pass-3033e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777846403865:android:a94f3ed0fa702ebef00b88",
+        "android_client_info": {
+          "package_name": "com.example.dig_pass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEtWHuLiI5LlthXJpSsSwmx0y8lkoqB-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777846403865:android:296965fcff2b23b0f00b88",
+        "android_client_info": {
+          "package_name": "com.example.digpassmaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEtWHuLiI5LlthXJpSsSwmx0y8lkoqB-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

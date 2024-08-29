@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".staff_application">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="31dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".StaffformActivity">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/light"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Staff Gate-Pass"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:textColor="@color/blue"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/gatepass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="Pass no:"
+                            android:textColor="@color/blue"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/applicant_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_mail_24"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Email"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/applicant_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/applicant_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_phone_enabled_24"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Mobile no"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/applicant_dept"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="15dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:text="Department"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toStartOf="@+id/applicant_post"
+                            app:layout_constraintStart_toStartOf="@id/linearLayout"
+                            app:layout_constraintTop_toTopOf="@id/linearLayout" />
+
+                        <TextView
+                            android:id="@+id/applicant_post"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:alpha="0.5"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:text="Post"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="@id/linearLayout"
+                            app:layout_constraintStart_toEndOf="@+id/applicant_dept"
+                            app:layout_constraintTop_toTopOf="@id/linearLayout"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <EditText
+                        android:id="@+id/applicant_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableLeft="@drawable/baseline_edit_note_24"
+                        android:drawablePadding="8dp"
+                        android:hint="Reason for leaving"
+                        android:padding="8dp"
+                        android:textColor="@color/white" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/leaving_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ltime"
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/custom_edittext"
+                            android:cursorVisible="false"
+                            android:drawableLeft="@drawable/outline_timer_24"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="8dp"
+                            android:text="Time of leaving"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@id/leaving_time"
+                            app:layout_constraintTop_toTopOf="@id/leaving_time"
+                            tools:layout_editor_absoluteY="8dp" />
+
+                        <Button
+                            android:id="@+id/btn_ltime"
+                            android:layout_width="95dp"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/blue"
+                            android:text="Set"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@id/leaving_time"
+                            app:layout_constraintTop_toTopOf="@id/leaving_time"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/return_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/rtime"
+                            android:layout_width="160dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/custom_edittext"
+                            android:cursorVisible="false"
+                            android:drawableLeft="@drawable/outline_timer_24"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="8dp"
+                            android:text="Time of return"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@id/return_time"
+                            app:layout_constraintTop_toTopOf="@id/return_time"
+                            tools:layout_editor_absoluteY="8dp" />
+
+                        <Button
+                            android:id="@+id/btn_rtime"
+                            android:layout_width="95dp"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/blue"
+                            android:text="Set"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@id/return_time"
+                            app:layout_constraintTop_toTopOf="@id/return_time"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/vehicle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/vlable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:text="Do you have a Vehicle"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="@id/vehicle"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <RadioGroup
+                            android:id="@+id/vopt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toBottomOf="@id/vlable">
+
+                            <RadioButton
+                                android:id="@+id/radioYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                android:textColor="@color/white" />
+
+                            <RadioButton
+                                android:id="@+id/radioNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:text="No"
+                                android:textColor="@color/white" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/vehicleno"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/custom_edittext"
+                            android:hint="Vehicle No."
+                            android:padding="8dp"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toBottomOf="@id/vopt" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnUpload"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_marginEnd="20dp"
+                            android:backgroundTint="@color/blue"
+                            android:drawableLeft="@drawable/baseline_attach_file_24"
+                            android:text="Upload File"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/blue"
+                            android:text="Submit"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="File Name: "
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
